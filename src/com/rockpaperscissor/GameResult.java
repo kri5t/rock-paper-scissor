@@ -18,6 +18,9 @@ public class GameResult {
     }
 
     public void incrementPlayer1WinsByOne(){
+        if(getNumberOfMatchesLeft() == 0){
+            return;
+        }
         this.player1Wins += 1;
     }
 
@@ -26,6 +29,9 @@ public class GameResult {
     }
 
     public void incrementPlayer2WinsByOne(){
+        if(getNumberOfMatchesLeft() == 0){
+            return;
+        }
         this.player2Wins += 1;
     }
 
